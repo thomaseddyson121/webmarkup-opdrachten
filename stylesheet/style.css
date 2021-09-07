@@ -11,3 +11,7 @@ body {
 #content-text {    
     text-decoration: underline;
 }
+
+#table, th {
+    border: 1px solid black;
+}
