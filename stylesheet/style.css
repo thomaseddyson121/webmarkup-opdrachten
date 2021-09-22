@@ -8,6 +8,14 @@ body {
     align-items: center;
 }
 
-#content-text {    
+#content-text {
     text-decoration: underline;
+}
+
+#copyright, h1 {
+    color: red;
+}
+
+#copyright, h2 {
+    color: blue;
 }
