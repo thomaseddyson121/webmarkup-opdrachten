@@ -1,21 +1,29 @@
-body {
-    background-color: #74F2CE;
+.item-a {
+    grid-area: header;
+    background: red;
 }
 
-.content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.item-b {
+    grid-area: main;
+    background: yellow;
 }
 
-#content-text {
-    text-decoration: underline;
+.item-c {
+    grid-area: sidebar;
+    background: blue;
 }
 
-#copyright, h1 {
-    color: red;
+.item-d {
+    grid-area: footer;
+    background: orange;
 }
 
-#copyright, h2 {
-    color: blue;
+.container {
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer";
 }
